@@ -14,3 +14,17 @@ guess = gets.chomp.to_i
 # - Perguntar novamente
 # - Pegar a nova tentativa e atualizar a variável
 # Avisar que o usuário ganhou quando sair do loop
+# while guess != price
+#   puts 'Try again. Guess the price ($1 to $5)'
+#   print '> '
+#   # Pegar a resposta e guardar em uma variável
+#   guess = gets.chomp.to_i
+# end
+# Loop 2: até que o usuário acerte o preço
+until guess == price
+  puts 'Try again. Guess the price ($1 to $5)'
+  print '> '
+  # Pegar a resposta e guardar em uma variável
+  guess = gets.chomp.to_i
+end
+puts "You won. The price was #{price}."

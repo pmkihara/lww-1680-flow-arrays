@@ -11,4 +11,11 @@ print '> '
 choice = gets.chomp
 # Se o usuário acertar, atribuir o valor "win" para result
 # Se o usuário não acertar, atribuir o valor "lose" para result
+# result = if choice == coin
+#            'win'
+#          else
+#            'lose'
+#          end
+result = choice == coin ? 'win' : 'lose'
 # Printar o resultado
+puts "You #{result}! The coin was #{coin}."
